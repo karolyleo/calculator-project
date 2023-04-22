@@ -1,0 +1,304 @@
+h1 {
+  margin-top: 0;
+  margin-bottom: 0;
+  font-size: 28px;
+  font-weight: 700;
+  line-height: 44px;
+}
+
+img {
+  max-height: 100%;
+  max-width: 100%;
+  display: inline-block;
+}
+
+.container {
+  flex-direction: column;
+  align-items: center;
+  display: flex;
+}
+
+.container.grow {
+  flex: 1;
+}
+
+.container.page-header {
+  border-bottom: 1px solid rgba(0, 0, 0, .14);
+  padding-top: 7px;
+  padding-bottom: 7px;
+  background-color: rgba(5, 17, 42, 0.5);
+  color: rgba(255, 255, 255, 0.13);
+}
+
+.container.main {
+  flex: 1;
+  position: relative;
+  background-color: rgba(10, 33, 68, 0.55);
+}
+
+.page-wrapper {
+  min-height: 100vh;
+  flex-direction: column;
+  display: flex;
+}
+
+.reddit-blog{
+  height: 8rem;
+  width: 50%;
+  margin-left: 15%;
+  margin-bottom: 1rem;
+  margin-top: 1rem;
+  background-color: rgba(5, 17, 42, 0.5);
+  border-radius: 4px;
+  outline: 1px solid rgba(52, 64, 93, 0.64);
+  display: flex;
+  align-content: center;
+}
+
+.reddit-blog h2{
+  margin: 0;
+  color: white;
+  font-size: 18px;
+  flex-grow: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-height: 100%;
+  letter-spacing: 2px;
+  background-color: rgba(26, 26, 26, 0.5);
+}
+
+.reddit-blog h6{
+  margin: 0;
+  padding-left: .5rem;
+  padding-top: .5rem;
+  /*background-color: blue;*/
+  color: white;
+  background-color: rgba(26, 26, 26, 0.5);
+}
+
+.reddit-blog ul, li{
+  color: white;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  background-color: #1f2023;
+}
+ul.column.shrink {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+ul.column.shrink li {
+  margin: 3px;
+  font-size: 14px;
+}
+
+ul.column.shrink li svg {
+  width: 40px;
+  height: 40px;
+}
+
+ul.column.shrink li:first-child svg {
+  fill: green;
+}
+
+ul.column.shrink li:last-child svg {
+  fill: red;
+}
+
+
+.row {
+  width: 100%;
+  max-width: 1100px;
+  grid-column-gap: 10px;
+  padding-left: 20px;
+  padding-right: 20px;
+  display: flex;
+}
+
+.row.grow {
+  flex: 1;
+}
+
+.row.grow.full-width.no-gap.no-padding {
+  padding-left: 0;
+  padding-right: 0;
+}
+
+.row.full-width {
+  max-width: none;
+}
+
+.row.no-gap {
+  grid-column-gap: 0px;
+}
+
+.row.space-between {
+  justify-content: space-between;
+}
+
+.column {
+  flex-direction: column;
+  flex: 1 0 0;
+  display: flex;
+}
+
+.column.background{
+  background-image: url("../images/background.jpg");
+  background-size: cover;
+  background-position: left;
+}
+
+
+.column.shrink {
+  flex: 0 auto;
+}
+
+.column.shrink.sidebar {
+  width: 300px;
+  color: #fff;
+  background-color: rgba(26, 26, 26, 0.95);
+  flex-direction: column;
+  display: flex;
+}
+
+.column.justify-center {
+  justify-content: center;
+}
+
+.logo-wrapper {
+  height: 56px;
+  grid-column-gap: 20px;
+  align-items: center;
+  padding-top: 7px;
+  padding-bottom: 7px;
+  padding-left: 20px;
+  display: flex;
+}
+
+.image {
+  max-height: 100%;
+}
+
+.logo-text {
+  color: #fff;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+
+.nav-wrapper {
+  flex: 1;
+}
+
+.nav-title {
+  color: #b8b8b8;
+  letter-spacing: 1px;
+  margin-top: 12px;
+  padding-left: 20px;
+}
+
+.navigation {
+  flex-direction: column;
+  display: flex;
+}
+
+.nav-link {
+  grid-column-gap: 20px;
+  color: #b8b8b8;
+  align-items: center;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  padding-left: 20px;
+  text-decoration: none;
+  transition: all .2s;
+  display: flex;
+}
+
+.nav-link:hover {
+  color: #fff;
+}
+
+.nav-link.active {
+  color: #fff;
+  background-color: rgba(0, 0, 0, .11);
+}
+
+.nav-link-icon {
+  width: 22px;
+}
+
+.profile-avatar-wrapper {
+  grid-column-gap: 20px;
+  border-top: 1px solid rgba(255, 255, 255, .25);
+  align-items: center;
+  padding: 10px 20px;
+  display: flex;
+}
+
+.sidebar-avatar-wrapper {
+  width: 50px;
+  height: 50px;
+  border-radius: 999px;
+  overflow: hidden;
+}
+
+.profile-avatar {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.d-flex {
+  display: flex;
+}
+
+.d-flex.grow {
+  flex: 1;
+}
+
+.d-flex.vertical {
+  flex-direction: column;
+}
+
+.header-avatar-wrapper {
+  width: 35px;
+  height: 35px;
+  border-radius: 999px;
+  overflow: hidden;
+}
+
+.test-block {
+  width: 100%;
+  height: 100px;
+  background-color: #ffa1a1;
+}
+
+.main-mask {
+  width: 100%;
+  height: 100%;
+  flex-direction: column;
+  align-items: center;
+  display: flex;
+  position: absolute;
+  top: 0;
+  left: 0;
+  overflow: auto;
+}
+
+.main-mask.grow {
+  flex: 1;
+}
+
+.main-mask.page-header {
+  border-bottom: 1px solid rgba(0, 0, 0, .14);
+  padding-top: 7px;
+  padding-bottom: 7px;
+}
+
+.main-mask.main {
+  flex: 1;
+  position: relative;
+}
